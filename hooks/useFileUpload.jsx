@@ -86,7 +86,6 @@ export const useFileUpload = () => {
   }
 
   useEffect(() => {
-    console.log('useEffect for loading files is running');
     try {
       const storedFiles = JSON.parse(localStorage.getItem('files')) || []
       storedFiles.forEach((file) => {
