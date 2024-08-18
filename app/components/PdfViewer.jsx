@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { FaLongArrowAltRight } from 'react-icons/fa'
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa'
 import { zoomPlugin } from '@react-pdf-viewer/zoom'
 import { Worker } from '@react-pdf-viewer/core'
 import { Viewer } from '@react-pdf-viewer/core'
@@ -26,7 +26,6 @@ export const PdfViewer = () => {
     handleResize()
     window.addEventListener('resize', handleResize)
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize)
     }
@@ -44,9 +43,9 @@ export const PdfViewer = () => {
               onClick={() => setToggle(!toggle)}
               className='text-purple-700 font-semibold flex items-center'
             >
-              Expand & view your file
+              {toggle ? 'Collapse' : 'Expand & view your file'}
               <span className='ml-2'>
-                <FaLongArrowAltRight />
+                {toggle ? <FaLongArrowAltLeft /> : <FaLongArrowAltRight /> }
               </span>
             </button>
           </div>
@@ -59,7 +58,7 @@ export const PdfViewer = () => {
         )}
       </div>
       {toggle && (
-        <div className='w-full h-[250px] sm:h-[600px] shadow-md py-3 px-2 viewer-container'>
+        <div className='w-full h-[400px] sm:h-[600px] shadow-md py-3 px-2 viewer-container'>
           <Worker
             workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}
           >

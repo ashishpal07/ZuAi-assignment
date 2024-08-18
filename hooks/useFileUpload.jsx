@@ -90,7 +90,6 @@ export const useFileUpload = () => {
     try {
       const storedFiles = JSON.parse(localStorage.getItem('files')) || []
       storedFiles.forEach((file) => {
-        // Adding a check to see if the file already exists in the store
         const fileExists = useStore.getState().files.some(
           (storedFile) => storedFile.name === file.name
         );

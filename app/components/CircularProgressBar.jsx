@@ -16,7 +16,7 @@ export const CircularProgressBar = ({
     <div>
       <svg height={size} width={size} className='block mx-auto'>
         <circle
-          stroke='#e5e7eb' // light gray background circle
+          stroke='#e5e7eb'
           fill='transparent'
           strokeWidth={strokeWidth}
           r={radius}
@@ -24,7 +24,7 @@ export const CircularProgressBar = ({
           cy={size / 2}
         />
         <circle
-          stroke={`${color}`} // blue color for progress
+          stroke={`${color}`}
           fill='transparent'
           strokeWidth={strokeWidth}
           strokeDasharray={circumference}

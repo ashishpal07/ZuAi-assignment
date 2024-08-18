@@ -6,11 +6,10 @@ import { Coursework } from './CourseWork';
 
 export const CourseworkList = () => {
   const files = useStore((state) => state.files);
-  const [displayCount, setDisplayCount] = useState(2); // Initial number of files to display
+  const [displayCount, setDisplayCount] = useState(2);
 
-  // Function to show more files
   const showMoreFiles = () => {
-    setDisplayCount(files.length); // Increase the count by 2 (or any desired number)
+    setDisplayCount(files.length);
   };
 
   return (

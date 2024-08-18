@@ -9,7 +9,7 @@ export default function evaluate () {
       <div className='w-[5%]'>
         <SideMenu />
       </div>
-      <div className='flex flex-col-reverse  md:flex md:flex-col lg:flex-row p-2 space-x-8 sm:w-[70%] lg:mt-20'>
+      <div className='flex flex-col-reverse justify-end w-[100%] md:flex md:flex-col md:justify-start md:mt-20 lg:flex-row p-2 space-x-8 sm:w-[70%]'>
         <div className='lg:w-[60%]'>
           <PdfViewer />
         </div>
