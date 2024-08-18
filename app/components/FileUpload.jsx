@@ -32,7 +32,7 @@ export const FileUpload = () => {
           <span className='text-purple-600'>We get you.</span>
         </h2>
       </div>
-      <div className='shadow-lg bg-gray-50 p-6 rounded-xl'>
+      <div className='shadow-lg bg-gray-50 p-6 rounded-xl mt-3'>
         <div
           {...getRootProps()}
           className={`border-2 rounded-md p-6 text-center mb-4 cursor-pointer transition-all duration-300 ${
