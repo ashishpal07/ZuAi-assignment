@@ -42,10 +42,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 * Implemented efficient retrieval of stored files and data.
 
 ## Coursework Details Form
-* Created dropdowns for "Coursework Type" and "Subject" in file upload form component.
+* Created dropdowns for "Coursework Type" dropdowns (IA Example, EE Example, IO Example, TOK Example) so that I can categorised on basis of that and display and "Subject" (physics, chemistry, science, Mathematics, others) in file upload form component.
 * Added a text input for essay title
 * Store form data locally with the associated file in localstorage and my store.
 
+## Evaluation Display
+* I have uses dummy data for everything in evaluation display (for pdf & everything).
+* I have Shown overall score with a circular progress bar indicator.
+* Displayed breakdown of scores by criteria (A, B, C)
+* Include evaluation date this I have implementes as current date (created getcurrent() function to get this format "12 jul 2024") 
+* Stored and retrieved evaluation results locally.
+
+## Coursework List
+* I have displayed previously uploaded coursework from local storage
+* Show title, subject, word count (are dynamically) and other relevant details for each item (is dummy or static)
+
+## Explore Coursework Section
+* Implemented a tabbed interface for different coursework categories i.e (IA Example, EE Example, IO Example, TOK Example)
+* Implemented a grid layout for coursework examples
 
 # Deploy on Vercel
 
