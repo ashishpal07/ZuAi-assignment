@@ -42,10 +42,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 * Implemented efficient retrieval of stored files and data.
 
 ## Coursework Details Form
-* Created dropdowns for "Coursework Type" and "Subject" in file upload form component.
+* Created dropdowns for "Coursework Type" dropdowns (IA Example, EE Example, IO Example, TOK Example) so that I can categorised on basis of that and display and "Subject" (physics, chemistry, science, Mathematics, others) in file upload form component.
 * Added a text input for essay title
 * Store form data locally with the associated file in localstorage and my store.
 
+## Evaluation Display
+* I have uses dummy data for everything in evaluation display (for pdf & everything).
+* I have Shown overall score with a circular progress bar indicator.
+* Displayed breakdown of scores by criteria (A, B, C)
+* Include evaluation date this I have implementes as current date (created getcurrent() function to get this format "12 jul 2024") 
+* Stored and retrieved evaluation results locally.
+
+## Coursework List
+* I have displayed previously uploaded coursework from local storage
+* Show title, subject, word count (are dynamically) and other relevant details for each item (is dummy or static)
+
+## Explore Coursework Section
+* Implemented a tabbed interface for different coursework categories i.e (IA Example, EE Example, IO Example, TOK Example)
+* Implemented a grid layout for coursework examples
+
+# Asummption while creating application
+Some basic assumptions on.
+* Basically every render coursework in coursworkList on clicking anyone of the course work list it should get to nevigate ```/evaluate``` route ant there I have shown everything as dummy data.
+* Have shown toast messages on various events like on file uploaded, all fields are required, on some errors as well like error while storing file in localStorage.
+* Now, like if we goes on ```/evaluate``` route so for comebase oh home route I have added ```/``` route on top-left ZuAi logo on click we come to home route.
+* And below medium break point in tailwind I have created hambuger icon and put there option on clicking hamburger and zuAi logo ony "Home" link will work to redirect us on homepage.
+
+# Challanges faced
+* I have faces some challanges while making responsive on mibile view.
+* faced challange to show PDF file and its zoom features on evaluation display which I have done using react-pdf viewer.
+* faced challanges while ipad view collapse while on mobile view I need to hide detailed evaluation by clicking on "check detaild evaluation button" then we can see detailed evaluation after that on each 3 of detaild evaluation car I have to toogle that as well to display and hide.
+* I have implemented drag and drop feature for file upload.
 
 # Deploy on Vercel
 
