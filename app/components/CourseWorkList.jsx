@@ -25,7 +25,7 @@ export const CourseworkList = () => {
       {displayCount < files.length && (
         <Button showMoreFiles={showMoreFiles} label={'View all'} />
       )}
-      {displayCount >= files.length && (
+      {(displayCount == files.length && displayCount > 2) && (
         <Button showMoreFiles={showMoreFiles} label={'View less'} />
       )}
     </div>

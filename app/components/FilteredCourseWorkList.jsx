@@ -13,10 +13,10 @@ export const FilteredCourseWorkList = () => {
     setActiveFilter,
   } = useFilteredCourseWork();
 
-  const [displayCount, setDisplayCount] = useState(2);
+  const [displayCount, setDisplayCount] = useState(4);
 
   const showMoreFiles = () => {
-    if (displayCount === files.length ) setDisplayCount(2)
+    if (displayCount === files.length ) setDisplayCount(4)
     else setDisplayCount(files.length)
   }
 
@@ -44,7 +44,7 @@ export const FilteredCourseWorkList = () => {
       {displayCount < files.length && (
         <Button showMoreFiles={showMoreFiles} label={'View all'} />
       )}
-      {displayCount >= files.length && (
+      {(displayCount >= files.length && displayCount > 4) && (
         <Button showMoreFiles={showMoreFiles} label={'View less'} />
       )}
     </div>
