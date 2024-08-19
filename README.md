@@ -62,6 +62,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 * Implemented a grid layout for coursework examples
 
 # Asummption while creating application
+Some basic assumptions on.
 * Basically every render coursework in coursworkList on clicking anyone of the course work list it should get to nevigate ```/evaluate``` route ant there I have shown everything as dummy data.
 * Have shown toast messages on various events like on file uploaded, all fields are required, on some errors as well like error while storing file in localStorage.
 * Now, like if we goes on ```/evaluate``` route so for comebase oh home route I have added ```/``` route on top-left ZuAi logo on click we come to home route.
