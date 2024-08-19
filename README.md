@@ -1,3 +1,5 @@
+# Hosted on vercel [link](https://zu-ai-assignment.vercel.app/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`npx create-next-app@latest`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Getting Started
