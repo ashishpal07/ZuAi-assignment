@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { useFileUpload } from '../../hooks/useFileUpload'
 import { AfterUpload } from './AfterUpload'
 import { BeforeFileUpload } from './BeforeFileUpload'
-import Link from 'next/link'
+
 
 export const FileUpload = () => {
   const {
@@ -98,7 +98,6 @@ export const FileUpload = () => {
             required
           />
         </div>
-        <Link href="/evaluate">
         <button
           className='bg-slate-300 text-white font-bold py-2 px-3 rounded-full mt-4 flex justify-between items-center hover:bg-purple-600'
           onClick={handleSubmit}
@@ -113,7 +112,6 @@ export const FileUpload = () => {
           </div>
           <div className='ml-3'>Evaluate your Score</div>
         </button>
-        </Link>
       </div>
     </div>
   )

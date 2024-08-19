@@ -1,4 +1,3 @@
-'use client'
 
 import { useState, useEffect, useCallback } from 'react';
 import { useStore } from '@/store/store';
@@ -72,6 +71,7 @@ export const useFileUpload = () => {
       toast.success('File metadata saved successfully', {
         position: 'top-center',
       });
+      window.location.href = "/evaluate"
     } catch (e) {
       console.error('Error while saving file metadata to localStorage', e);
       toast.error('Error while saving file metadata to localStorage', {
