@@ -8,7 +8,7 @@ export const FormComponent = () => {
       <div className='w-7/10'>
         <FileUpload />
       </div>
-      <Image src={sideImage} className='hidden lg:block w-[25%] px-3' alt='Main Photo' />
+      <Image src={sideImage} className='hidden lg:block w-[30%] px-3' alt='Main Photo' />
     </div>
   )
 }
