@@ -20,7 +20,7 @@ export const useStore = create(set => ({
         type === 'All'
           ? state.files
           : state.files.filter(
-              file =>
+              (file) => 
                 file.courseworkDetails.courseworkType.toLowerCase() ===
                 type.toLowerCase()
             )

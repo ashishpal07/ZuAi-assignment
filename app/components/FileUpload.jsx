@@ -21,7 +21,7 @@ export const FileUpload = () => {
     getInputProps,
     isDragActive,
     onDrop,
-    handleSubmit
+    handleSubmit,
   } = useFileUpload()
 
   return (
@@ -98,21 +98,21 @@ export const FileUpload = () => {
             required
           />
         </div>
-        <Link href='/evaluate'>
-          <button
-            className='bg-slate-300 text-white font-bold py-2 px-3 rounded-full mt-4 flex justify-between items-center hover:bg-purple-600'
-            onClick={handleSubmit}
-          >
-            <div>
-              <Image
-                src={scoreButton}
-                height={26}
-                width={26}
-                alt='Score Button'
-              />
-            </div>
-            <div className='ml-3'>Evaluate your Score</div>
-          </button>
+        <Link href="/evaluate">
+        <button
+          className='bg-slate-300 text-white font-bold py-2 px-3 rounded-full mt-4 flex justify-between items-center hover:bg-purple-600'
+          onClick={handleSubmit}
+        >
+          <div>
+            <Image
+              src={scoreButton}
+              height={26}
+              width={26}
+              alt='Score Button'
+            />
+          </div>
+          <div className='ml-3'>Evaluate your Score</div>
+        </button>
         </Link>
       </div>
     </div>

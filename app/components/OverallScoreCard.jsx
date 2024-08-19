@@ -1,5 +1,5 @@
 import { CircularProgressBar } from './CircularProgressBar'
-import { getDateFormat } from '@/utility/getDate'
+import { getDateFormat } from '@/utils/getDate'
 
 export const OverallScoreCard = () => {
   const currentDate = getDateFormat();
