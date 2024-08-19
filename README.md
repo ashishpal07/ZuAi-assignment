@@ -1,6 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`npx create-next-app@latest`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Getting Started
 
 First, run the development server:
 
@@ -29,8 +29,27 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+# Implemented Features
+## File Upload Feature
+* Implement drag-and-drop functionality for PDF files and other files as well.
+* Provided a manual file upload option as well.
+* Display file size limit (e.g., "Limit 25 MB per file") and put check for this in code as well if, file size exceeds 25 MB it will show toast message.
+* I have stored uploaded files using browser local storage.
+
+## Local Storage Implementation
+* Saved uploaded files and their metadata locally in local storage & in my store as well using zustand(state management library).
+* I have persist data across page reloads.
+* Implemented efficient retrieval of stored files and data.
+
+## Coursework Details Form
+* Created dropdowns for "Coursework Type" and "Subject" in file upload form component.
+* Added a text input for essay title
+* Store form data locally with the associated file in localstorage and my store.
+
+
+# Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Here is my application deployed on [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) and my here [hosted link](https://zu-ai-assignment.vercel.app/).
