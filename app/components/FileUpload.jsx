@@ -61,7 +61,7 @@ export const FileUpload = () => {
               <option value='' disabled>
                 Coursework Type
               </option>
-              <option value='ie example'>IE Example</option>
+              <option value='ia example'>IA Example</option>
               <option value='ee example'>EE Example</option>
               <option value='io example'>IO Example</option>
               <option value='tok example'>TOK Example</option>
