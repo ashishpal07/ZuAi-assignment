@@ -73,7 +73,6 @@ Some basic assumptions on.
 * faced challange to show PDF file and its zoom features on evaluation display which I have done using react-pdf viewer.
 * faced challanges while ipad view collapse while on mobile view I need to hide detailed evaluation by clicking on "check detaild evaluation button" then we can see detailed evaluation after that on each 3 of detaild evaluation car I have to toogle that as well to display and hide.
 * I have implemented drag and drop feature for file upload.
-* I have uses pdf viewer but while seeing pdf geeting lines in screen tried alot to solve but still line comes there for 2-3 secs.
 
 # Deploy on Vercel
 
