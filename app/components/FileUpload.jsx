@@ -35,10 +35,10 @@ export const FileUpload = () => {
       <div className='shadow-lg bg-gray-50 p-6 rounded-xl mt-3'>
         <div
           {...getRootProps()}
-          className={`border-2 rounded-md p-6 text-center mb-4 cursor-pointer transition-all duration-300 ${
+          className={`border-2 rounded-md flex flex-col justify-center items-center p-6 text-center mb-4 cursor-pointer transition-all duration-300 ${
             isDragActive ? 'border-purple-500 bg-purple-50' : 'border-dashed'
           }`}
-          style={{ width: '100%', height: '200px' }}
+          style={{ width: '100%', height: '300px' }}
         >
           <input {...getInputProps()} />
           {fileData ? (
