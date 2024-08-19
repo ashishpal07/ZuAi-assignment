@@ -21,7 +21,9 @@ export const useFileUpload = () => {
     setIsDragActive(false)
     acceptedFiles.forEach(file => {
       if (file.size > 25 * 1024 * 1024) {
-        alert(`File size exceeds the limit of 25 MB: ${file.name}`)
+        toast.info('File size is greater than 25 MB', {
+          position: 'top-center'
+        })
         return
       }
 
