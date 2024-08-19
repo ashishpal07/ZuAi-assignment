@@ -23,7 +23,7 @@ export const CourseworkList = () => {
       {displayCount < files.length && (
         <div className="flex justify-center mt-4">
           <button
-            className="px-5 py-2 rounded-full bg-slate-150 text-slate-300 font-bold hover:bg-purple-700"
+            className="px-5 py-2 rounded-full bg-slate-150 text-slate-400 font-bold hover:bg-purple-700"
             onClick={showMoreFiles}
           >
             View all

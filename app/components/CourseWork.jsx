@@ -19,8 +19,8 @@ export const Coursework = ({ file }) => {
         <div className='ml-2'>
           <h3 className='font-bold mb-1 sm:text-xl'>
             {file.name.length > 25
-              ? `${file.name.substring(0, 25)}...`
-              : file.name}
+              ? `${file.courseworkDetails?.title.substring(0, 30)}...`
+              : file.courseworkDetails?.title}
           </h3>
           <p className='text-sm lg:text-lg text-slate-500'>
             How does the temperature of a Copper pipe affect the time it takes a
