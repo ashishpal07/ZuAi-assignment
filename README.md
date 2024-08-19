@@ -1,3 +1,5 @@
+# Hosted on vercel [link](https://zu-ai-assignment.vercel.app/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`npx create-next-app@latest`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Getting Started
@@ -67,6 +69,7 @@ Some basic assumptions on.
 * Have shown toast messages on various events like on file uploaded, all fields are required, on some errors as well like error while storing file in localStorage.
 * Now, like if we goes on ```/evaluate``` route so for comebase oh home route I have added ```/``` route on top-left ZuAi logo on click we come to home route.
 * And below medium break point in tailwind I have created hambuger icon and put there option on clicking hamburger and zuAi logo ony "Home" link will work to redirect us on homepage.
+* I have added view less button for coursework and explore coursework section as well.
 
 # Challanges faced
 * I have faces some challanges while making responsive on mibile view.
@@ -79,4 +82,4 @@ Some basic assumptions on.
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-Here is my application deployed on [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) and my here [hosted link](https://zu-ai-assignment.vercel.app/).
+Here is my application deployed on [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) and here is my [hosted link](https://zu-ai-assignment.vercel.app/).
