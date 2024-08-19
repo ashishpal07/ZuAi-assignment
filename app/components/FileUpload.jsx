@@ -6,7 +6,6 @@ import { useFileUpload } from '../../hooks/useFileUpload'
 import { AfterUpload } from './AfterUpload'
 import { BeforeFileUpload } from './BeforeFileUpload'
 
-
 export const FileUpload = () => {
   const {
     courseworkType,
