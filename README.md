@@ -67,6 +67,7 @@ Some basic assumptions on.
 * Have shown toast messages on various events like on file uploaded, all fields are required, on some errors as well like error while storing file in localStorage.
 * Now, like if we goes on ```/evaluate``` route so for comebase oh home route I have added ```/``` route on top-left ZuAi logo on click we come to home route.
 * And below medium break point in tailwind I have created hambuger icon and put there option on clicking hamburger and zuAi logo ony "Home" link will work to redirect us on homepage.
+* I have added view less button for coursework and explore coursework section as well.
 
 # Challanges faced
 * I have faces some challanges while making responsive on mibile view.
