@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useFilteredCourseWork } from '../../hooks/useFilteredCourseWork';
 import { Coursework } from './CourseWork';
+import { Button } from './Button';
 
 export const FilteredCourseWorkList = () => {
   const {
@@ -12,11 +13,12 @@ export const FilteredCourseWorkList = () => {
     setActiveFilter,
   } = useFilteredCourseWork();
 
-  const [displayCount, setDisplayCount] = useState(4);
+  const [displayCount, setDisplayCount] = useState(2);
 
   const showMoreFiles = () => {
-    setDisplayCount(files.length);
-  };
+    if (displayCount === files.length ) setDisplayCount(2)
+    else setDisplayCount(files.length)
+  }
 
   return (
     <div className="px-3 py-4 bg-blue-50 rounded-md mt-7">
@@ -40,14 +42,10 @@ export const FilteredCourseWorkList = () => {
         })}
       </div>
       {displayCount < files.length && (
-        <div className="flex justify-center mt-4">
-          <button
-            className="px-5 py-2 rounded-full bg-slate-150 text-slate-400 font-bold hover:bg-purple-700"
-            onClick={showMoreFiles}
-          >
-            View all
-          </button>
-        </div>
+        <Button showMoreFiles={showMoreFiles} label={'View all'} />
+      )}
+      {displayCount >= files.length && (
+        <Button showMoreFiles={showMoreFiles} label={'View less'} />
       )}
     </div>
   );
