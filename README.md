@@ -33,7 +33,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 # Implemented Features
 ## File Upload Feature
-* Implement drag-and-drop functionality for PDF files and other files as well.
+* Implement drag-and-drop functionality for PDF files, i.e we can upload only pdf files only.
 * Provided a manual file upload option as well.
 * Display file size limit (e.g., "Limit 25 MB per file") and put check for this in code as well if, file size exceeds 25 MB it will show toast message.
 * I have stored uploaded files using browser local storage.
